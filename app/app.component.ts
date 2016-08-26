@@ -21,7 +21,10 @@ export class AppComponent {
   constructor(){
     this.meals = [
       new Meal("Mac & Cheese", "Yummy but sinful", 310),
-      new Meal("Carrots", "What you should always eat!", 25)
+      new Meal("Carrots", "What you should always eat!", 25),
+      new Meal("Fettuccine Alfredo", "Really bad for you...", 800),
+      new Meal("Sushi", "Not a bad way to go for a meal", 304),
+      new Meal("Bag of Candy", "You always tell yourself just one more.", 600)
     ];
   }
 }

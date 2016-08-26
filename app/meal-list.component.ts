@@ -8,15 +8,15 @@ import {CaloriesPipe} from './calories.pipe';
 @Component({
   selector: 'meal-list',
   inputs: ['mealList'],
+  pipes:[CaloriesPipe],
   directives: [MealComponent, EditMealDetailsComponent, AddMealComponent],
   template: `
-  <label>Filter Meals
-  <select (change="onChange($event.target.value)" class="filter")>
-    <option selected value="all">Show All Meals</option>
-    <option value="500">Show High Calorie Meals<option>
-    <option value="499">Show Low Calorie Meals</option>
-  </label>
-  <meal-display *ngFor="#meal of mealList" [meal]="meal" (click)="mealClicked(meal)" [class.selected]="meal === selectedMeal"></meal-display>
+  <select (change)="onChange($event.target.value)">
+    <option value="all">Show All Meals</option>
+    <option value="isHighCalories">Show High Calorie Meals</option>
+    <option value="notHighCalories">Show Low Calorie Meals</option>
+  </select>
+  <meal-display *ngFor="#meal of mealList | caloriesFilter:selectedCalories" [meal]="meal" (click)="mealClicked(meal)" [class.selected]="meal === selectedMeal"></meal-display>
   <meal-edit-details *ngIf="selectedMeal" [meal]="selectedMeal"></meal-edit-details>
   <meal-add (onSubmitNewMeal)="createMeal($event)"></meal-add>
   `
@@ -25,8 +25,8 @@ import {CaloriesPipe} from './calories.pipe';
 export class MealListComponent {
   public mealList: Meal[];
   public selectedMeal: Meal;
+  public selectedCalories: string = "all";
   mealClicked(clickedMeal: Meal): void {
-    console.log(clickedMeal);
     this.selectedMeal = clickedMeal;
   }
   createMeal(meal): void {
@@ -35,6 +35,6 @@ export class MealListComponent {
     );
   }
   onChange(optionFromMenu) {
-    this.selectedMeal = optionFromMenu;
+    this.selectedCalories = optionFromMenu;
   }
 }
