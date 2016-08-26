@@ -1,37 +1,31 @@
-# _Application Name_
+# _Meal Tracker_
 
-#### By _**Sid Benavente**_
+#### By _**Russ Davies**_
 
-## Description/Specifications
-
-###### An application which...
-
-  * As a user...
-  * As a user...
-  * As a user...
+## Description
+A web app that tracks today's food intake in terms of calories. You can also edit and add new meals, as well as filter between high calorie and low calorie meals.
 
 #### Use this program
 Clone this repository.
-
-_*Part 1. Prepare the database.*_
-The root folder of this project contains...
-* Step 1
-* Step 2
-
-_*Part 2. Run server and access the web app.*_
-Prepare your machine by following the [instructions here.](https://www.learnhowtoprogram.com/c/getting-started-with-c/installing-c)
-To start the local server...
+Run npm install in PowerShell.
+Run bower install.
+Run gulp build.
+Run gulp serve.
 
 #### Known Bugs / Unimplemented Features
-TBD
+None known at this time.
 
 #### Support and contact details
-Please contact the authors if you have any questions or comments.
+Please contact me at russdavies392@gmail.com if you have any questions or comments.
 
 #### Technologies Used
-This web application was created using...
+* Angular 2
+* TypeScript
+* bower
+* node.js
+* gulp
 
 #### License
-Copyright (c) 2016 _**Sid Benavente**_
+Copyright (c) 2016 _**Russ Davies**_
 
 This software is licensed under the MIT license.
