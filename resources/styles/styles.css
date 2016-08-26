@@ -1,15 +1,25 @@
 .header {
   color: white;
-  background-image:url(/resources/images/produce.png);
+  background-color: #20b2aa;
   padding: 30px;
 }
 
 body {
   text-align: center;
+  background-color: lightblue;
+    background-image:url(/resources/images/produce.png);
 }
 
 .selected {
-  color: lightblue;
+  color: #20b2aa;
+}
+
+.btn {
+  background-color: #20b2aa;
+}
+
+.btn:hover {
+  background-color: #006994;
 }
 
 .meal-list {
@@ -17,7 +27,8 @@ body {
 }
 
 .meal-display {
-  margin-top: 30px;
+  margin-top: 60px;
+  background-color:white;
 }
 
 .meal-add {
