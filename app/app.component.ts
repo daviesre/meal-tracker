@@ -1,6 +1,7 @@
 // import Component code from angulary library
 import { Component } from 'angular2/core';
 import {Meal} from './meal.model';
+import {MealListComponent} from './meal-list.component';
 
 // annotation
 @Component({
