@@ -8,9 +8,12 @@ import {MealListComponent} from './meal-list.component';
   selector: 'my-app',
   directives: [MealListComponent],
   template: `
-    <div class = "container">
+    <div class = "container-fluid header">
       <h1>Meal Tracker!</h1>
-      <meal-list [mealList]="meals"></meal-list>
+      <h4>record your meals for today here:</h4>
+    </div>
+    <div class="meal-list">
+    <meal-list [mealList]="meals"></meal-list>
     </div>
   `
 })

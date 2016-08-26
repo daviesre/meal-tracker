@@ -1,7 +1,29 @@
-h1 {
-  color: blue;
+.header {
+  color: white;
+  background-image:url(/resources/images/produce.png);
+  padding: 30px;
+}
+
+body {
+  text-align: center;
 }
 
 .selected {
   color: lightblue;
+}
+
+.meal-list {
+  margin-top: 30px;
+}
+
+.meal-display {
+  margin-top: 30px;
+}
+
+.meal-add {
+  margin-top: 80px;
+}
+
+.meal-edit {
+  margin-top: 80px;
 }
