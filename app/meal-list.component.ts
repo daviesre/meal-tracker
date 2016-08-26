@@ -7,10 +7,15 @@ import {MealComponent} from './meal.component';
   inputs: ['mealList'],
   directives: [MealComponent],
   template: `
-  <meal-display *ngFor="#meal of mealList" [meal]="meal"></meal-display>
+  <meal-display *ngFor="#meal of mealList" [meal]="meal" (click)="mealClicked(meal)" [class.selected]="meal === selectedMeal"></meal-display>
   `
 })
 
 export class MealListComponent {
   public mealList: Meal[];
+  public selectedMeal: Meal;
+  mealClicked(clickedMeal: Meal): void {
+    console.log(clickedMeal);
+    this.selectedMeal = clickedMeal;
+  }
 }
