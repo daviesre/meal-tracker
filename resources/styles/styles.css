@@ -1,7 +1,7 @@
 .header {
   color: white;
   background-color: #20b2aa;
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 10px;
   font-family: 'Lakki Reddy', cursive;
 }
@@ -17,11 +17,7 @@ body {
 }
 
 .btn {
-  background-color: #20b2aa;
-}
-
-.btn:hover {
-  background-color: #006994;
+  margin-left: 10px;
 }
 
 .meal-filter {
@@ -33,6 +29,5 @@ body {
 }
 
 .meal-add {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 50px;
 }
