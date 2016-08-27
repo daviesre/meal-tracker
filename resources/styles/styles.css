@@ -2,16 +2,18 @@
   color: white;
   background-color: #20b2aa;
   padding: 30px;
+  margin-bottom: 10px;
+  font-family: 'Lakki Reddy', cursive;
 }
 
 body {
   text-align: center;
-  background-color: lightblue;
-    background-image:url(/resources/images/produce.png);
+  background-image:url(/resources/images/produce.png);
+  font-family: 'Arya', sans-serif;
 }
 
-.selected {
-  color: #20b2aa;
+.color-display {
+  color: black;
 }
 
 .btn {
@@ -22,19 +24,15 @@ body {
   background-color: #006994;
 }
 
-.meal-list {
-  margin-top: 30px;
+.meal-filter {
+  margin-bottom: 50px;
 }
 
 .meal-display {
-  margin-top: 60px;
-  background-color:white;
+  color: white;
 }
 
 .meal-add {
   margin-top: 80px;
-}
-
-.meal-edit {
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
